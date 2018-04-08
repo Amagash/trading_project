@@ -53,11 +53,10 @@ def create_labels(dataset, sequence_length):
     # return data_x, data_y
 
 def plot_original_data(data):
-    #plot original data
     plt.figure(figsize=(10, 10))
-    plt.plot(data, 'g', label='original dataset')
+    plt.plot(data.date, data.Weighted_Price, lw=1, label='Original Price')
     plt.legend(loc='upper left')
-    plt.xlabel('Timestamp')
+    plt.xlabel('Time')
     plt.ylabel('Price')
     plt.show()
 
